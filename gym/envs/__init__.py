@@ -211,6 +211,13 @@ register(
 )
 
 register(
+    id='SparseReacher-v1',
+    entry_point='gym.envs.mujoco:SparseReacherEnv',
+    max_episode_steps=50,
+    reward_threshold=1,
+)
+
+register(
     id='Pusher-v0',
     entry_point='gym.envs.mujoco:PusherEnv',
     max_episode_steps=100,
