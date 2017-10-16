@@ -218,6 +218,21 @@ register(
 )
 
 register(
+    id='Jaco50-v1',
+    entry_point='gym.envs.mujoco:JacoEnv',
+    max_episode_steps=50, # try with 50 instead
+    reward_threshold=-5.5,
+)
+
+register(
+    id='Jaco150-v1',
+    entry_point='gym.envs.mujoco:JacoEnv',
+    max_episode_steps=150, # try with 50 instead
+    reward_threshold=-5.5,
+)
+
+
+register(
     id='Pusher-v0',
     entry_point='gym.envs.mujoco:PusherEnv',
     max_episode_steps=100,
