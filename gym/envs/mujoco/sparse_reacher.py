@@ -48,6 +48,5 @@ class SparseReacherEnv(mujoco_env.MujocoEnv, utils.EzPickle):
             np.sin(theta),
             self.model.data.qpos.flat[2:],
             self.model.data.qvel.flat[:2],
-            self.get_body_com("fingertip") - self.get_body_com("target"),
-            np.asarray([np.linalg.norm(self.get_body_com("fingertip") - self.get_body_com("target"))])
+            self.get_body_com("fingertip") - self.get_body_com("target")
         ])
