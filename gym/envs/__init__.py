@@ -218,6 +218,35 @@ register(
 )
 
 register(
+    id='Gripper50-v1',
+    entry_point='gym.envs.mujoco:GripperEnv',
+    max_episode_steps=50, # try with 50 instead
+    reward_threshold=-10,
+)
+
+register(
+    id='Gripper150-v1',
+    entry_point='gym.envs.mujoco:GripperEnv',
+    max_episode_steps=150, # try with 50 instead
+    reward_threshold=-10,
+)
+
+register(
+    id='Arm3dDoor50-v1',
+    entry_point='gym.envs.mujoco:Arm3dDoorEnv',
+    max_episode_steps=50, # try with 50 instead
+    reward_threshold=-10,
+)
+
+register(
+    id='Arm3dDoor150-v1',
+    entry_point='gym.envs.mujoco:Arm3dDoorEnv',
+    max_episode_steps=150, # try with 50 instead
+    reward_threshold=-10,
+)
+
+
+register(
     id='Jaco50-v1',
     entry_point='gym.envs.mujoco:JacoEnv',
     max_episode_steps=50, # try with 50 instead
